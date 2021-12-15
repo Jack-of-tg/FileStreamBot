@@ -106,7 +106,7 @@ DATABASE_URL=mongodb_uri
 
 `BIN_CHANNEL` : Create a new channel (private/public), add [@missrose_bot](https://telegram.dog/MissRose_bot) as admin to the channel and type /id. Now copy paste the ID into this field.
 
-`OWNER_ID` : Your Telegram User ID
+`OWNER_ID` : Your Telegram User ID.
 
 `DATABASE_URL` : MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help to get the URI you can ask in [Me Telegram](https://t.me/Avishkarpatil).
 
