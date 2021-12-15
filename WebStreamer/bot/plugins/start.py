@@ -29,11 +29,12 @@ HELP_TEXT = """
 
 ABOUT_TEXT = """
 <b>⚜ Mʏ ɴᴀᴍᴇ : TG File To Link Bot</b>\n
-<b>🔸Vᴇʀꜱɪᴏɴ : <a href='https://telegram.me/Newdvdupdate'>3.0.1</a></b>\n
+<b>🔸Bᴜɪʟᴅ Sᴛᴀᴛᴜs : <a href='https://telegram.me/Newdvdupdate'>3.0.1 [BETA]</a></b>\n
 <b>🔹Sᴏᴜʀᴄᴇ : <a href='https://t.me/newdvdupdate'>Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n
-<b>🔸GitHub : <a href='https://t.me/Newdvdupdate'>Fᴏʟʟᴏᴡ</a></b>\n
+<b>🔸Cʀᴇᴅɪᴛs : <a href='https://t.me/Newdvdupdate'>Eᴠᴇʀʏᴏɴᴇ ɪɴ ᴛʜɪs Jᴏᴜʀɴᴇʏ</a></b>\n
 <b>🔹Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://telegram.me/NewDVDupdate'>ᴅʀᴇᴀᴍᴄᴀᴛᴄʜᴇʀ</a></b>\n
-<b>🔸Lᴀꜱᴛ ᴜᴘᴅᴀᴛᴇᴅ : <a href='https://telegram.me/Newdvdupdate'>[ 12-ᴊᴜʟʏ-21 ] 04:35 PM</a></b>"""
+<b>🔸Sᴇʀᴠᴇʀ : <a href='https://telegram.me/Newdvdupdate'> AWS (VPS)</a></b>\n
+<b>🔹Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ : <a href='https://telegram.me/mallumoviezgroup'> Cʟɪᴄᴋ Hᴇʀᴇ</a></b>"""
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
