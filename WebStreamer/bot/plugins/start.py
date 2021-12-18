@@ -104,9 +104,9 @@ async def start(b, m):
                     )
                     return
             except UserNotParticipant:
-                await b.send_message(
+                await b.send_photo(photo="https://te.legra.ph/file/28cc84836aab0d0e68e48.jpg",
                     chat_id=m.chat.id,
-                    text="<i>Jᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ 🔐</i>",
+                    caption="<i>Jᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ 🔐</i>",
                     reply_markup=InlineKeyboardMarkup(
                         [[
                             InlineKeyboardButton("Jᴏɪɴ ɴᴏᴡ 🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
@@ -122,10 +122,10 @@ async def start(b, m):
                     parse_mode="HTML",
                     disable_web_page_preview=True)
                 return
-        await m.reply_text(
-            text=START_TEXT.format(m.from_user.mention),
+        await m.reply_photo(photo= "https://te.legra.ph/file/e6e9c28d84e9b0fc095ee.jpg",
+            caption=START_TEXT.format(m.from_user.mention),
             parse_mode="HTML",
-            disable_web_page_preview=True,
+            #disable_web_page_preview=True,
             reply_markup=START_BUTTONS
               )                                                                         
                                                                                        
