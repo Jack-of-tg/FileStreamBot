@@ -10,22 +10,20 @@ from pyrogram.errors import UserNotParticipant
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 
 START_TEXT = """
-<i>Hᴇʏ 👋,</i><b>{} 😍</b>\n
-<i>I'ᴍ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ</i>\n
-<i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>\n
+<i><b>Hᴇʏ 👋 {} 😍</b></i>\n
+<i><b>I'ᴍ Sɪᴍᴘʟᴇ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇ ᴛᴏ Iɴꜱᴛᴀɴᴛ Pᴇʀᴍᴇɴᴀɴᴛ Dɪʀᴇᴄᴛ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ 😜</b></i>\n
 <i><u>𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u></i>\n
-<b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.</b>\n
+<b>🔞 Pʀᴏɴ Cᴏɴᴛᴇɴᴛꜱ Lᴇᴀᴅꜱ ᴛᴏ Pᴇʀᴍᴀɴᴇɴᴛ Bᴀɴ Yᴏᴜ ❌</b>\n
 <b>📽️ Rᴇϙᴜᴇsᴛ Mᴏᴠɪᴇs : @FileSearch1Bot</b>\n
 <i><b>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : @OTTHelpBot</b></i>"""
 
 HELP_TEXT = """
 <i>🔻 Sᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ (ᴏʀ) ᴍᴇᴅɪᴀ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.</i>
 <i>🔻 I ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴇxᴛᴇʀɴᴀʟ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ !.</i>
-<i>🔻 Aᴅᴅ Mᴇ ɪɴ ʏᴏᴜʀ Cʜᴀɴɴᴇʟ Fᴏʀ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋs Bᴜᴛᴛᴏɴ</i>
 <i>🔻 Tʜɪs Pᴇʀᴍᴇᴀɴᴛ Lɪɴᴋ Wɪᴛʜ Fᴀsᴛᴇsᴛ Sᴘᴇᴇᴅ</i>\n
 <i><u>🔸 𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u><i>\n
-<b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.</b>\n
-<i>Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ (ᴏʀ) ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ</i> <b>: <a href='https://t.me/OTTHelpbot'>[ ᴄʟɪᴄᴋ ʜᴇʀᴇ ]</a></b>"""
+<b>🔞 Pʀᴏɴ Cᴏɴᴛᴇɴᴛꜱ Lᴇᴀᴅꜱ ᴛᴏ Pᴇʀᴍᴀɴᴇɴᴛ Bᴀɴ Yᴏᴜ ❌</b>\n
+<i>Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ (ᴏʀ) Rᴇᴘᴏʀᴛ Bᴜɢꜱ</i> <b>: <a href='https://t.me/OTTHelpbot'>[ ᴄʟɪᴄᴋ ʜᴇʀᴇ ]</a></b>"""
 
 ABOUT_TEXT = """
 <b>⚜ Mʏ ɴᴀᴍᴇ : TG File To Link Bot</b>\n
