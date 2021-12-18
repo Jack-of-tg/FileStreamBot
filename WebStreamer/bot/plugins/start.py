@@ -122,7 +122,7 @@ async def start(b, m):
                     parse_mode="HTML",
                     disable_web_page_preview=True)
                 return
-        await m.reply_photo(photo= "https://te.legra.ph/file/e6e9c28d84e9b0fc095ee.jpg",
+        await m.reply_photo(photo= "https://te.legra.ph/file/53cfe23f923648c5f8e46.jpg",
             caption=START_TEXT.format(m.from_user.mention),
             parse_mode="HTML",
             #disable_web_page_preview=True,
