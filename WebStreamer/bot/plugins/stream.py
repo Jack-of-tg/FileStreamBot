@@ -14,9 +14,6 @@ BANNED_USERS = [int(user) for user in environ.get("BANNED_USERS", "").split()]
 
 
 @StreamBot.on_message(filters.private & (filters.document | filters.video | filters.audio) & ~filters.edited & ~filters.user(BANNED_USERS), group=4)
-async def filter_bnd_users(c: Client,m: Message):
-    await c.send_message('<b><i>You are banned from using this Bot..😎\n\nContact Admin : @OTTHelpBot 🤒</i></b>')
-
 async def private_receive_handler(c: Client, m: Message):
     if not await db.is_user_exist(m.from_user.id):
         await db.add_user(m.from_user.id)
@@ -130,3 +127,7 @@ async def channel_receive_handler(bot, broadcast):
     except Exception as e:
         await bot.send_message(chat_id=Var.BIN_CHANNEL, text=f"**#ᴇʀʀᴏʀ_ᴛʀᴀᴄᴇʙᴀᴄᴋ:** `{e}`", disable_web_page_preview=True, parse_mode="Markdown")
         print(f"Cᴀɴ'ᴛ Eᴅɪᴛ Bʀᴏᴀᴅᴄᴀsᴛ Mᴇssᴀɢᴇ!\nEʀʀᴏʀ: {e}")
+
+@StreamBot.on_message(filters.private & (filters.document | filters.video | filters.audio) & ~filters.edited & filters.user(BANNED_USERS), group=5)
+async def filter_bnd_users(c: Client,m: Message):
+    await c.send_message('<b><i>You are banned from using this Bot..😎\n\nContact Admin : @OTTHelpBot 🤒</i></b>')
