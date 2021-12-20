@@ -131,3 +131,4 @@ async def channel_receive_handler(bot, broadcast):
 @StreamBot.on_message(filters.private & (filters.document | filters.video | filters.audio) & ~filters.edited & filters.user(BANNED_USERS), group=5)
 async def filter_bnd_users(c: Client,m: Message):
     await c.send_message('<b><i>You are banned from using this Bot..😎\n\nContact Admin : @OTTHelpBot 🤒</i></b>')
+    return
