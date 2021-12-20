@@ -33,6 +33,9 @@
       "BOT_TOKEN": {
           "description": "Get this value from @BotFather"
       },
+      "BANNED_USERS": {
+          "description": "Get this value from @BotFather"
+      },
       "BIN_CHANNEL": {
           "description": "The BIN Channel ID. Read the readme for more info about this var"
           
