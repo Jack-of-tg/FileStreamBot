@@ -4,7 +4,7 @@ from os import getenv, environ
 from dotenv import load_dotenv
 
 load_dotenv()
-BANNED_USERS = [environ.get("BANNED_USERS", "").split()]
+BANNED_USERS = [int(user) for user in environ.get("BANNED_USERS", "").split()]
 
 class Var(object):
     API_ID = int(getenv('API_ID'))
