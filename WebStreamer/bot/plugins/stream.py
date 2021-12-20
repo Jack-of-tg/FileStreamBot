@@ -1,6 +1,6 @@
 
 # (c) @Avishkarpatil 
-
+from os import environ
 import asyncio
 from WebStreamer.bot import StreamBot
 from WebStreamer.utils.database import Database
@@ -10,6 +10,7 @@ from pyrogram import filters, Client
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
+BANNED_USERS = [int(user) for user in environ.get("BANNED_USERS", "").split()]
 
 
 @StreamBot.on_message(filters.private & (filters.document | filters.video | filters.audio) & ~filters.edited & ~filters.user(BANNED_USERS), group=4)
