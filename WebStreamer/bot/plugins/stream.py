@@ -13,8 +13,11 @@ db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 BANNED_USERS = [int(user) for user in environ.get("BANNED_USERS", "").split()]
 
 
-@StreamBot.on_message(filters.private & (filters.document | filters.video | filters.audio) & ~filters.edited & ~filters.user(BANNED_USERS), group=4)
+@StreamBot.on_message(filters.private & (filters.document | filters.video | filters.audio) & ~filters.edited,group=4)
 async def private_receive_handler(c: Client, m: Message):
+    if m.chat.id in BANNED_USERS:
+       await m.reply_text('you are banned')
+       return
     if not await db.is_user_exist(m.from_user.id):
         await db.add_user(m.from_user.id)
         await c.send_message(
@@ -128,7 +131,4 @@ async def channel_receive_handler(bot, broadcast):
         await bot.send_message(chat_id=Var.BIN_CHANNEL, text=f"**#ᴇʀʀᴏʀ_ᴛʀᴀᴄᴇʙᴀᴄᴋ:** `{e}`", disable_web_page_preview=True, parse_mode="Markdown")
         print(f"Cᴀɴ'ᴛ Eᴅɪᴛ Bʀᴏᴀᴅᴄᴀsᴛ Mᴇssᴀɢᴇ!\nEʀʀᴏʀ: {e}")
 
-@StreamBot.on_message(filters.private & (filters.document | filters.video | filters.audio) & ~filters.edited & filters.user(BANNED_USERS), group=5)
-async def filter_bnd_users(c: Client,m: Message):
-    await c.send_message('<b><i>You are banned from using this Bot..😎\n\nContact Admin : @OTTHelpBot 🤒</i></b>')
-    return
+
